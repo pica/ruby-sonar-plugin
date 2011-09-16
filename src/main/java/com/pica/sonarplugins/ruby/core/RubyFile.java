@@ -112,7 +112,7 @@ public class RubyFile extends Resource<RubyPackage> {
 
   /**
    * Creates a {@link RubyFile} from a file in the source directories.
-   * 
+   *
    * @param unitTest whether it is a unit test file or a source file
    * @return the {@link RubyFile} created if exists, null otherwise
    */

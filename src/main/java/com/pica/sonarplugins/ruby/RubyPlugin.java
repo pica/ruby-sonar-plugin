@@ -1,6 +1,8 @@
 package com.pica.sonarplugins.ruby;
 
 import com.pica.sonarplugins.ruby.core.Ruby;
+import com.pica.sonarplugins.ruby.core.RubySourceCodeColorizer;
+import com.pica.sonarplugins.ruby.core.RubySourceImporter;
 import org.sonar.api.Plugin;
 import org.sonar.api.Properties;
 
@@ -26,7 +28,9 @@ public class RubyPlugin implements Plugin {
     public List getExtensions() {
         return Arrays.asList(
                 Ruby.class,
-                RubySensor.class
+                RubySensor.class,
+                RubySourceImporter.class,
+                RubySourceCodeColorizer.class
         );
     }
 
