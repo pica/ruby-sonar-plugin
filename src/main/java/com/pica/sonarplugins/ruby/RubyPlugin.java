@@ -3,6 +3,7 @@ package com.pica.sonarplugins.ruby;
 import com.pica.sonarplugins.ruby.core.Ruby;
 import com.pica.sonarplugins.ruby.core.RubySourceCodeColorizer;
 import com.pica.sonarplugins.ruby.core.RubySourceImporter;
+import com.pica.sonarplugins.ruby.rcov.RcovSensor;
 import org.sonar.api.Plugin;
 import org.sonar.api.Properties;
 
@@ -30,7 +31,8 @@ public class RubyPlugin implements Plugin {
                 Ruby.class,
                 RubySensor.class,
                 RubySourceImporter.class,
-                RubySourceCodeColorizer.class
+                RubySourceCodeColorizer.class,
+                RcovSensor.class
         );
     }
 
