@@ -30,10 +30,9 @@ public class RcovSensor implements Sensor {
         } catch (IOException e) {
             LOG.error("Error analysing project.", e);
         }
-
     }
 
-    protected void parseReport(ProjectFileSystem fileSystem, File rootFile, final SensorContext context) throws IOException {;
+    protected void parseReport(ProjectFileSystem fileSystem, File rootFile, final SensorContext context) throws IOException {
         //Coverage will be assigned to the "root" ruby file
         RubyFile rootRubyFile = RubyFile.fromIOFile(fileSystem.getBasedir(), fileSystem.getSourceDirs());
 
