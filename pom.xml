@@ -45,9 +45,9 @@
     </dependencies>
 
     <properties>
-        <sonar.version>2.7</sonar.version>
+        <sonar.version>3.4.1</sonar.version>
         <sonar.pluginClass>com.pica.sonarplugins.ruby.RubyPlugin</sonar.pluginClass>
-        <sonar.runtimeVersion>2.7</sonar.runtimeVersion>
+        <sonar.runtimeVersion>3.4.1</sonar.runtimeVersion>
         <sonar.pluginName>Ruby</sonar.pluginName>
     </properties>
 
